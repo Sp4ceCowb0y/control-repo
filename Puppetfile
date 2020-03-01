@@ -10,3 +10,6 @@ mod 'puppetlabs/haproxy', '1.5.0'
 
 mod 'tomcat',                                                                                          
 	:git	=> 'https://github.com/Sp4ceCowb0y/puppet-module-tomcat.git'
+
+mod 'java',
+        :git    => 'https://github.com/Sp4ceCowb0y/puppet-module-java.git'
