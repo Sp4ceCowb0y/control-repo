@@ -1,6 +1,6 @@
 node 'node1' {
 
-    #include base
+    include base
 
     class {'::tomcat':
         xms             => '60m',
@@ -10,10 +10,10 @@ node 'node1' {
         service_state   => 'running'
     }
     
-    tomcat::deploy { "sysfoo":
-        deploy_url      =>  'https://42-243470015-gh.circle-artifacts.com/0/tmp/artifacts/sysfoo.war',
-        checksum_value  => '09af421c3f483c615ff587141a2806ab',
-    }
+    #tomcat::deploy { "sysfoo":
+    #    deploy_url      =>  'https://42-243470015-gh.circle-artifacts.com/0/tmp/artifacts/sysfoo.war',
+    #    checksum_value  => '09af421c3f483c615ff587141a2806ab',
+    #}
 
 }
 
@@ -29,7 +29,7 @@ node default {
 
 node 'node2' {
 
-    #include base
+    include base
 
     class {'::tomcat':
         xms             => '70m',
@@ -39,9 +39,9 @@ node 'node2' {
         service_state   => 'running'
     }
     
-    tomcat::deploy { "sysfoo":
-        deploy_url      =>  'https://42-243470015-gh.circle-artifacts.com/0/tmp/artifacts/sysfoo.war',
-        checksum_value  => '09af421c3f483c615ff587141a2806ab',
-    }
+    #tomcat::deploy { "sysfoo":
+    #    deploy_url      =>  'https://42-243470015-gh.circle-artifacts.com/0/tmp/artifacts/sysfoo.war',
+    #    checksum_value  => '09af421c3f483c615ff587141a2806ab',
+    #}
 
 }
