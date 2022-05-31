@@ -3,5 +3,5 @@
 #
 class profile::apache_server {
   # resources
-  include apache
+  include apache::init.pp
 }
