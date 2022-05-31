@@ -17,4 +17,4 @@ forge 'https://forge.puppet.com'
 #  branch: 'docs_experiment'
 
 mod 'apache',
-  git:    'https://github.com/Sp4ceCowb0y/puppet-module-apache.git'
+  git:    'https://github.com/letsgoking/puppet-module-apache.git'
